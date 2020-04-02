@@ -8,7 +8,7 @@ attr_accessor :word
 
   def match(anagrams)
     word = self.word.split("").sort
-    anagrams.select{|a| a.split("").sort == word}  
+    anagrams.select{|a| a.split("").sort == word}
   end
 
 end
